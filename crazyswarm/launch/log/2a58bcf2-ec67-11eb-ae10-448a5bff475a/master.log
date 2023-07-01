@@ -1,0 +1,586 @@
+[rosmaster.main][INFO] 2021-07-24 12:09:01,057: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2021-07-24 12:09:01,057: Starting ROS Master Node
+[xmlrpc][INFO] 2021-07-24 12:09:01,058: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2021-07-24 12:09:01,058: Started XML-RPC server [http://feuuu:11311/]
+[rosmaster.master][INFO] 2021-07-24 12:09:01,058: Master initialized: port[11311], uri[http://feuuu:11311/]
+[xmlrpc][INFO] 2021-07-24 12:09:01,058: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,156: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,157: +PARAM [/roslaunch/uris/host_feuuu__42729] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,303: +PARAM [/markerConfigurations/1/offset] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,304: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/kw_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,304: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/kw_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,304: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/kd_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,304: +PARAM [/crazyswarm_teleop/timescale] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,305: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/i_range_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,305: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/kp_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,305: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/kalman/pNAcc_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,305: +SERVICE [/rosout/get_loggers] /rosout http://feuuu:39161/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,305: +PARAM [/crazyswarm_server/firmwareParams/ring/solidGreen] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,305: +PARAM [/crazyswarm_server/optitrack_host_name] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,306: +SERVICE [/rosout/set_logger_level] /rosout http://feuuu:39161/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,306: +PARAM [/crazyflieTypes/CF21SingleMarker/markerConfiguration] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,306: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/kd_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,306: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/kp_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,306: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/ki_m_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,306: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/mass] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,307: +PUB [/rosout_agg] /rosout http://feuuu:39161/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,307: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/i_range_m_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,307: +PARAM [/crazyswarm_server/firmwareParams/ring/effect] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,307: +PARAM [/crazyswarm_server/enable_parameters] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,308: +PARAM [/crazyswarm_server/optitrack_client_name] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,308: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/kw_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,308: +PARAM [/dynamicsConfigurations/0/maxXVelocity] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,309: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/kp_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,309: +SUB [/rosout] /rosout http://feuuu:39161/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,309: +PARAM [/crazyswarm_server/save_point_clouds] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,309: +PARAM [/crazyswarm_server/print_latency] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,309: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/kR_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,309: +PARAM [/crazyflieTypes/large/bigQuad] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,309: +PARAM [/markerConfigurations/1/points/3] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,309: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/kw_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,309: +PARAM [/markerConfigurations/1/points/2] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/large/markerConfiguration] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyswarm_server/genericLogTopics] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/i_range_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/ki_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/kalman/mNGyro_rollpitch] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/markerConfigurations/1/points/0] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/i_range_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/kd_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/large/dynamicsConfiguration] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/defaultSingleMarker/batteryVoltageWarning] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/markerConfigurations/2/offset] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyswarm_server/genericLogTopic_log1_Variables] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/kR_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/kp_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,310: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/kd_omega_rp] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/crazyflieTypes/medium/markerConfiguration] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/markerConfigurations/0/offset] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/crazyswarm_server/genericLogTopicFrequencies] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/dynamicsConfigurations/0/maxRollRate] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/crazyflieTypes/default/dynamicsConfiguration] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/kd_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/i_range_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/markerConfigurations/3/offset] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/kR_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/kR_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/crazyflieTypes/defaultSingleMarker/dynamicsConfiguration] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,311: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/kR_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/massThrust] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/kd_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/markerConfigurations/3/numPoints] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyswarm_server/object_tracking_type] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyflies] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyflieTypes/CF21SingleMarker/bigQuad] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyflieTypes/medium/batteryVoltageWarning] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/i_range_m_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/dynamicsConfigurations/0/maxYVelocity] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/kalman/pNAcc_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/markerConfigurations/1/numPoints] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyswarm_server/world_frame] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/ki_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/numDynamicsConfigurations] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/massThrust] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,312: +PARAM [/crazyflieTypes/CF21SingleMarker/batteryVoltateCritical] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/kd_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/markerConfigurations/0/numPoints] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/kd_omega_rp] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/kd_omega_rp] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/kR_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/ki_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/kd_omega_rp] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/kp_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/kR_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/kd_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/kp_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/ki_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyswarm_teleop/csv_file] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/massThrust] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/massThrust] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/mass] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,313: +PARAM [/crazyswarm_server/firmwareParams/commander/enHighLevel] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/crazyswarm_server/send_position_only] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/kp_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/crazyflieTypes/medium/dynamicsConfiguration] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/mass] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/markerConfigurations/1/points/1] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/kd_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/dynamicsConfigurations/0/maxYawRate] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/dynamicsConfigurations/0/maxRoll] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/dynamicsConfigurations/0/maxPitchRate] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/ki_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/kw_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/kp_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/ki_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,314: +PARAM [/crazyflieTypes/CF21SingleMarker/dynamicsConfiguration] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/dynamicsConfigurations/0/maxZVelocity] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/kw_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/crazyflieTypes/CF21SingleMarker/batteryVoltageWarning] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/crazyswarm_server/firmwareParams/locSrv/extPosStdDev] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/ki_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/numMarkerConfigurations] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/kd_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/crazyswarm_server/firmwareParams/stabilizer/estimator] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/i_range_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/i_range_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,315: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/ki_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyflieTypes/defaultSingleMarker/bigQuad] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/kR_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/markerConfigurations/2/points/2] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/markerConfigurations/2/points/3] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/ki_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/markerConfigurations/2/points/1] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/kw_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/kw_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyflieTypes/defaultSingleMarker/batteryVoltateCritical] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/ki_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyswarm_server/firmwareParams/ring/headlightEnable] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyflieTypes/large/batteryVoltageWarning] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyswarm_server/firmwareParams/ring/solidRed] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyswarm_server/optitrack_base_port] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,316: +PARAM [/crazyflieTypes/default/bigQuad] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/ki_m_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/kw_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/kR_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/defaultSingleMarker/markerConfiguration] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/kR_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/markerConfigurations/3/points/0] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/kalman/pNAcc_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/default/batteryVoltateCritical] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/ki_m_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/kalman/mNGyro_yaw] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/kw_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/dynamicsConfigurations/0/maxFitnessScore] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/massThrust] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/ctrlMel/kp_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/markerConfigurations/0/points/0] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/markerConfigurations/0/points/1] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,317: +PARAM [/markerConfigurations/0/points/2] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyswarm_server/motion_capture_type] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/kp_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/mass] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyswarm_server/firmwareParams/ring/solidBlue] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/i_range_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/kalman/pNAcc_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/medium/batteryVoltateCritical] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyswarm_server/force_no_cache] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/mass] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/i_range_m_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/default/markerConfiguration] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/i_range_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/medium/bigQuad] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,318: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/i_range_m_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/crazyswarm_server/write_csvs] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/dynamicsConfigurations/0/maxPitch] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/crazyflieTypes/large/batteryVoltateCritical] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/i_range_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/markerConfigurations/2/points/0] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/markerConfigurations/2/numPoints] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/crazyflieTypes/CF21SingleMarker/firmwareParams/kalman/mNGyro_rollpitch] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/kd_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/ki_m_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/ctrlMel/ki_m_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/crazyswarm_server/firmwareParams/stabilizer/controller] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/crazyflieTypes/medium/firmwareParams/ctrlMel/i_range_m_z] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,319: +PARAM [/crazyflieTypes/default/firmwareParams/ctrlMel/kd_omega_rp] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,320: +PARAM [/crazyflieTypes/large/firmwareParams/ctrlMel/i_range_xy] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,320: +PARAM [/crazyswarm_server/firmwareParams/kalman/resetEstimation] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,320: +PARAM [/crazyswarm_server/enable_logging] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,320: +PARAM [/crazyflieTypes/default/batteryVoltageWarning] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,320: +PARAM [/crazyflieTypes/defaultSingleMarker/firmwareParams/kalman/mNGyro_yaw] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,320: +PARAM [/crazyswarm_server/firmwareParams/locSrv/extQuatStdDev] by /roslaunch
+[rosmaster.master][INFO] 2021-07-24 12:09:01,349: +PUB [/rosout] /crazyswarm_teleop http://feuuu:39347/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,350: +SERVICE [/crazyswarm_teleop/get_loggers] /crazyswarm_teleop http://feuuu:39347/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,350: +SERVICE [/crazyswarm_teleop/set_logger_level] /crazyswarm_teleop http://feuuu:39347/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,353: +SUB [/joy] /crazyswarm_teleop http://feuuu:39347/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,358: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39347/']
+[rosmaster.master][INFO] 2021-07-24 12:09:01,359: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39347/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2021-07-24 12:09:01,405: +PUB [/rosout] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,405: +SERVICE [/crazyswarm_server/get_loggers] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,406: +SERVICE [/crazyswarm_server/set_logger_level] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,407: +SERVICE [/emergency] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,408: +SERVICE [/start_trajectory] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,408: +SERVICE [/takeoff] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,409: +SERVICE [/land] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,409: +SERVICE [/go_to] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,410: +SERVICE [/update_params] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,410: +PUB [/pointCloud] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,413: +SUB [/virtual_interactive_object] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,446: +PUB [/tf] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,458: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39347/', 'http://feuuu:39807/']
+[rosmaster.master][INFO] 2021-07-24 12:09:01,460: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39347/', 'http://feuuu:39807/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2021-07-24 12:09:01,461: +PUB [/rosout] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,462: +SERVICE [/my_rosbag/get_loggers] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,462: +SERVICE [/my_rosbag/set_logger_level] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,463: +SERVICE [/cf1/upload_trajectory] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,464: +SERVICE [/cf1/start_trajectory] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,464: +SERVICE [/cf1/takeoff] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,466: +SERVICE [/cf1/land] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,466: +SERVICE [/cf1/go_to] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,467: +SERVICE [/cf1/set_group_mask] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,467: +SERVICE [/cf1/notify_setpoints_stop] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,468: +SUB [/tf] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,470: +SUB [/cf1/cmd_vel] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,471: +SUB [/rosout] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,472: +SUB [/cf1/cmd_position] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,474: +SUB [/pointCloud] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,475: +SUB [/cf1/cmd_full_state] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,476: +SUB [/rosout_agg] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,478: +SUB [/cf1/cmd_velocity_world] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,479: +SUB [/cf1/cmd_stop] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,480: +PUB [/cf1/log1] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,501: +PUB [/rosout] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,502: +SERVICE [/rviz/get_loggers] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,503: +SERVICE [/rviz/set_logger_level] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,560: publisherUpdate[/rosout] -> http://feuuu:42005/ ['http://feuuu:39347/', 'http://feuuu:39807/', 'http://feuuu:42005/', 'http://feuuu:38035/']
+[rosmaster.master][INFO] 2021-07-24 12:09:01,560: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39347/', 'http://feuuu:39807/', 'http://feuuu:42005/']
+[rosmaster.master][INFO] 2021-07-24 12:09:01,579: publisherUpdate[/rosout] -> http://feuuu:42005/ ['http://feuuu:39347/', 'http://feuuu:39807/', 'http://feuuu:42005/', 'http://feuuu:38035/']: sec=0.02, result=[0, 'Error writing: Error opening file: 2021-07-24-12-09-01.bag.active', 0]
+[rosmaster.master][INFO] 2021-07-24 12:09:01,580: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39347/', 'http://feuuu:39807/', 'http://feuuu:42005/']: sec=0.02, result=[1, '', 0]
+[rosmaster.master][INFO] 2021-07-24 12:09:01,580: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39347/', 'http://feuuu:39807/', 'http://feuuu:42005/', 'http://feuuu:38035/']
+[rosmaster.master][INFO] 2021-07-24 12:09:01,581: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39347/', 'http://feuuu:39807/', 'http://feuuu:42005/', 'http://feuuu:38035/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2021-07-24 12:09:01,682: -PUB [/rosout] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,682: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39347/', 'http://feuuu:39807/', 'http://feuuu:38035/']
+[rosmaster.master][INFO] 2021-07-24 12:09:01,683: -SUB [/tf] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,684: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39347/', 'http://feuuu:39807/', 'http://feuuu:38035/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2021-07-24 12:09:01,684: publisherUpdate[/rosout] -> http://feuuu:42005/ ['http://feuuu:39347/', 'http://feuuu:39807/', 'http://feuuu:38035/']
+[rosmaster.master][INFO] 2021-07-24 12:09:01,684: -SUB [/rosout] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,685: -SUB [/pointCloud] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,685: -SUB [/rosout_agg] /my_rosbag http://feuuu:42005/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,686: -SERVICE [/my_rosbag/get_loggers] /my_rosbag rosrpc://feuuu:39371
+[rosmaster.master][INFO] 2021-07-24 12:09:01,686: -SERVICE [/my_rosbag/set_logger_level] /my_rosbag rosrpc://feuuu:39371
+[rosmaster.master][INFO] 2021-07-24 12:09:01,693: publisherUpdate[/rosout] -> http://feuuu:42005/ ['http://feuuu:39347/', 'http://feuuu:39807/', 'http://feuuu:38035/']: sec=0.01, exception=[Errno 111] Connection refused
+[rosmaster.threadpool][ERROR] 2021-07-24 12:09:01,694: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosmaster.master][INFO] 2021-07-24 12:09:01,755: +SUB [/tf] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,756: +SUB [/tf_static] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,787: +PUB [/initialpose] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,788: +PUB [/goal] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,891: +SUB [/pointCloud] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,892: -PUB [/goal] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,892: -PUB [/initialpose] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,895: +PUB [/initialpose] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,896: +PUB [/goal] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,897: +PUB [/move_base_simple/goal] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,897: -PUB [/goal] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,898: +PUB [/clicked_point] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,914: +PARAM [/cf1/imu_sensors/BMP388] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,914: +PARAM [/cf1/imu_sensors/HMC5883L] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,914: +PARAM [/cf1/imu_sensors/MS5611] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,915: +PARAM [/cf1/imu_tests/MPU6500] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,915: +PARAM [/cf1/imu_tests/HMC5883L] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,916: +PARAM [/cf1/imu_tests/MS5611] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,916: +PARAM [/cf1/imu_sensors/BMP388] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,917: +PARAM [/cf1/cpu/flash] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,917: +PARAM [/cf1/cpu/id0] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,918: +PARAM [/cf1/cpu/id1] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,919: +PARAM [/cf1/cpu/id2] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,919: +PARAM [/cf1/system/selftestPassed] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,920: +SERVICE [/rviz/reload_shaders] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,920: +PARAM [/cf1/sound/effect] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,920: +SERVICE [/rviz/load_config] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,921: +PARAM [/cf1/sound/neffect] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,921: +SERVICE [/rviz/save_config] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:01,922: +PARAM [/cf1/sound/freq] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,922: +PARAM [/cf1/sound/ratio] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,923: +PARAM [/cf1/system/taskDump] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,923: +PARAM [/cf1/memTst/resetW] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,924: +PARAM [/cf1/commander/enHighLevel] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,924: +PARAM [/cf1/flightmode/althold] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,925: +PARAM [/cf1/flightmode/poshold] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,925: +PARAM [/cf1/flightmode/posSet] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,925: +PARAM [/cf1/flightmode/yawMode] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,926: +PARAM [/cf1/flightmode/yawRst] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,926: +PARAM [/cf1/flightmode/stabModeRoll] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,927: +PARAM [/cf1/flightmode/stabModePitch] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,927: +PARAM [/cf1/flightmode/stabModeYaw] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,927: +PARAM [/cf1/cmdrCPPM/rateRoll] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,928: +PARAM [/cf1/cmdrCPPM/ratePitch] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,928: +PARAM [/cf1/cmdrCPPM/rateYaw] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,929: +PARAM [/cf1/cmdrCPPM/angRoll] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,929: +PARAM [/cf1/cmdrCPPM/angPitch] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,929: +PARAM [/cf1/locSrv/enRangeStreamFP32] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,930: +PARAM [/cf1/locSrv/extPosStdDev] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,930: +PARAM [/cf1/locSrv/extQuatStdDev] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,930: +PARAM [/cf1/pid_attitude/roll_kp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,931: +PARAM [/cf1/pid_attitude/roll_ki] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,931: +PARAM [/cf1/pid_attitude/roll_kd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,931: +PARAM [/cf1/pid_attitude/pitch_kp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,932: +PARAM [/cf1/pid_attitude/pitch_ki] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,932: +PARAM [/cf1/pid_attitude/pitch_kd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,932: +PARAM [/cf1/pid_attitude/yaw_kp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,933: +PARAM [/cf1/pid_attitude/yaw_ki] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,933: +PARAM [/cf1/pid_attitude/yaw_kd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,933: +PARAM [/cf1/pid_rate/roll_kp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,934: +PARAM [/cf1/pid_rate/roll_ki] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,934: +PARAM [/cf1/pid_rate/roll_kd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,934: +PARAM [/cf1/pid_rate/pitch_kp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,934: +PARAM [/cf1/pid_rate/pitch_ki] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,935: +PARAM [/cf1/pid_rate/pitch_kd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,935: +PARAM [/cf1/pid_rate/yaw_kp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,935: +PARAM [/cf1/pid_rate/yaw_ki] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,936: +PARAM [/cf1/pid_rate/yaw_kd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,936: +PARAM [/cf1/sensfusion6/kp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,936: +PARAM [/cf1/sensfusion6/ki] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,936: +PARAM [/cf1/sensfusion6/baseZacc] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,937: +PARAM [/cf1/health/startPropTest] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,937: +PARAM [/cf1/stabilizer/estimator] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,937: +PARAM [/cf1/stabilizer/controller] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,938: +PARAM [/cf1/stabilizer/stop] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,938: +PARAM [/cf1/posEstAlt/estAlphaAsl] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,938: +PARAM [/cf1/posEstAlt/estAlphaZr] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,939: +PARAM [/cf1/posEstAlt/velFactor] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,939: +PARAM [/cf1/posEstAlt/velZAlpha] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,939: +PARAM [/cf1/posEstAlt/vAccDeadband] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,939: +PARAM [/cf1/posCtlPid/xKp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,940: +PARAM [/cf1/posCtlPid/xKi] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,940: +PARAM [/cf1/posCtlPid/xKd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,940: +PARAM [/cf1/posCtlPid/yKp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,941: +PARAM [/cf1/posCtlPid/yKi] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,941: +PARAM [/cf1/posCtlPid/yKd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,941: +PARAM [/cf1/posCtlPid/zKp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,942: +PARAM [/cf1/posCtlPid/zKi] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,942: +PARAM [/cf1/posCtlPid/zKd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,942: +PARAM [/cf1/posCtlPid/thrustBase] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,943: +PARAM [/cf1/posCtlPid/thrustMin] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,943: +PARAM [/cf1/posCtlPid/rpLimit] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,944: +PARAM [/cf1/posCtlPid/xyVelMax] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,944: +PARAM [/cf1/posCtlPid/zVelMax] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,945: +PARAM [/cf1/velCtlPid/vxKp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,945: +PARAM [/cf1/velCtlPid/vxKi] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,945: +PARAM [/cf1/velCtlPid/vxKd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,946: +PARAM [/cf1/velCtlPid/vyKp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,946: +PARAM [/cf1/velCtlPid/vyKi] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,947: +PARAM [/cf1/velCtlPid/vyKd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,947: +PARAM [/cf1/velCtlPid/vzKp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,947: +PARAM [/cf1/velCtlPid/vzKi] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,947: +PARAM [/cf1/velCtlPid/vzKd] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,948: +PARAM [/cf1/controller/tiltComp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,948: +PARAM [/cf1/ctrlMel/kp_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,948: +PARAM [/cf1/ctrlMel/kd_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,949: +PARAM [/cf1/ctrlMel/ki_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,949: +PARAM [/cf1/ctrlMel/i_range_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,949: +PARAM [/cf1/ctrlMel/kp_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,949: +PARAM [/cf1/ctrlMel/kd_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,950: +PARAM [/cf1/ctrlMel/ki_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,950: +PARAM [/cf1/ctrlMel/i_range_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,950: +PARAM [/cf1/ctrlMel/mass] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,950: +PARAM [/cf1/ctrlMel/massThrust] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,951: +PARAM [/cf1/ctrlMel/kR_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,951: +PARAM [/cf1/ctrlMel/kR_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,951: +PARAM [/cf1/ctrlMel/kw_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,952: +PARAM [/cf1/ctrlMel/kw_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,952: +PARAM [/cf1/ctrlMel/ki_m_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,952: +PARAM [/cf1/ctrlMel/ki_m_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,953: +PARAM [/cf1/ctrlMel/kd_omega_rp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,953: +PARAM [/cf1/ctrlMel/i_range_m_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,954: +PARAM [/cf1/ctrlMel/i_range_m_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,954: +PARAM [/cf1/motorPowerSet/enable] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,954: +PARAM [/cf1/motorPowerSet/m1] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,955: +PARAM [/cf1/motorPowerSet/m2] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,955: +PARAM [/cf1/motorPowerSet/m3] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,955: +PARAM [/cf1/motorPowerSet/m4] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,956: +PARAM [/cf1/kalman/resetEstimation] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,956: +PARAM [/cf1/kalman/quadIsFlying] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,956: +PARAM [/cf1/kalman/pNAcc_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,957: +PARAM [/cf1/kalman/pNAcc_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,957: +PARAM [/cf1/kalman/pNVel] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,957: +PARAM [/cf1/kalman/pNPos] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,958: +PARAM [/cf1/kalman/pNAtt] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,958: +PARAM [/cf1/kalman/mNBaro] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,958: +PARAM [/cf1/kalman/mNGyro_rollpitch] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,958: +PARAM [/cf1/kalman/mNGyro_yaw] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,959: +PARAM [/cf1/kalman/initialX] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,959: +PARAM [/cf1/kalman/initialY] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,959: +PARAM [/cf1/kalman/initialZ] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,960: +PARAM [/cf1/kalman/initialYaw] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,960: +PARAM [/cf1/kalman/maxPos] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,960: +PARAM [/cf1/kalman/maxVel] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,961: +PARAM [/cf1/deck/bcLedRing] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,961: +PARAM [/cf1/ring/effect] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,961: +PARAM [/cf1/ring/neffect] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,962: +PARAM [/cf1/ring/solidRed] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,962: +PARAM [/cf1/ring/solidGreen] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,962: +PARAM [/cf1/ring/solidBlue] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,963: +PARAM [/cf1/ring/headlightEnable] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,963: +PARAM [/cf1/ring/glowstep] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,963: +PARAM [/cf1/ring/emptyCharge] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,963: +PARAM [/cf1/ring/fullCharge] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,964: +PARAM [/cf1/ring/fadeColor] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,964: +PARAM [/cf1/ring/fadeTime] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,964: +PARAM [/cf1/deck/bcBuzzer] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,965: +PARAM [/cf1/deck/bcGTGPS] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,965: +PARAM [/cf1/deck/bcCPPM] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,965: +PARAM [/cf1/deck/bcUSD] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,966: +PARAM [/cf1/usd/logging] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,966: +PARAM [/cf1/deck/bcZRanger] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,966: +PARAM [/cf1/deck/bcZRanger2] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,967: +PARAM [/cf1/deck/bcDWM1000] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,967: +PARAM [/cf1/loco/mode] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,967: +PARAM [/cf1/tdoa3/logId] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,968: +PARAM [/cf1/tdoa3/logOthrId] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,968: +PARAM [/cf1/deck/bcFlow] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,968: +PARAM [/cf1/deck/bcFlow2] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,969: +PARAM [/cf1/motion/disable] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,969: +PARAM [/cf1/deck/bcOA] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,969: +PARAM [/cf1/deck/bcMultiranger] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,970: +PARAM [/cf1/deck/bdLighthouse4] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,970: +PARAM [/cf1/activeMarker/front] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,970: +PARAM [/cf1/activeMarker/back] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,971: +PARAM [/cf1/activeMarker/left] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,971: +PARAM [/cf1/activeMarker/right] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,971: +PARAM [/cf1/firmware/revision0] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,971: +PARAM [/cf1/firmware/revision1] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,972: +PARAM [/cf1/firmware/modified] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:01,972: +SERVICE [/cf1/update_params] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:02,411: +PARAM [/cf1/commander/enHighLevel] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,412: +PARAM [/cf1/kalman/resetEstimation] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,412: +PARAM [/cf1/locSrv/extPosStdDev] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,413: +PARAM [/cf1/locSrv/extQuatStdDev] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,413: +PARAM [/cf1/ring/effect] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,414: +PARAM [/cf1/ring/headlightEnable] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,414: +PARAM [/cf1/ring/solidBlue] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,415: +PARAM [/cf1/ring/solidGreen] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,416: +PARAM [/cf1/ring/solidRed] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,416: +PARAM [/cf1/stabilizer/controller] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,417: +PARAM [/cf1/stabilizer/estimator] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,418: +PARAM [/cf1/ctrlMel/i_range_m_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,418: +PARAM [/cf1/ctrlMel/i_range_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,419: +PARAM [/cf1/ctrlMel/i_range_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,419: +PARAM [/cf1/ctrlMel/kR_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,420: +PARAM [/cf1/ctrlMel/kR_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,420: +PARAM [/cf1/ctrlMel/kd_omega_rp] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,421: +PARAM [/cf1/ctrlMel/kd_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,421: +PARAM [/cf1/ctrlMel/kd_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,422: +PARAM [/cf1/ctrlMel/ki_m_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,422: +PARAM [/cf1/ctrlMel/ki_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,423: +PARAM [/cf1/ctrlMel/ki_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,423: +PARAM [/cf1/ctrlMel/kp_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,423: +PARAM [/cf1/ctrlMel/kp_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,424: +PARAM [/cf1/ctrlMel/kw_xy] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,424: +PARAM [/cf1/ctrlMel/kw_z] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,424: +PARAM [/cf1/ctrlMel/mass] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:02,425: +PARAM [/cf1/ctrlMel/massThrust] by /crazyswarm_server
+[rosmaster.master][INFO] 2021-07-24 12:09:12,013: -PUB [/rosout] /crazyswarm_teleop http://feuuu:39347/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,014: -SUB [/joy] /crazyswarm_teleop http://feuuu:39347/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,015: -SERVICE [/crazyswarm_teleop/get_loggers] /crazyswarm_teleop rosrpc://feuuu:38741
+[rosmaster.master][INFO] 2021-07-24 12:09:12,015: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39807/', 'http://feuuu:38035/']
+[rosmaster.master][INFO] 2021-07-24 12:09:12,016: -PUB [/rosout] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,018: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:39807/', 'http://feuuu:38035/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2021-07-24 12:09:12,018: -PUB [/rosout] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,018: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:38035/']
+[rosmaster.master][INFO] 2021-07-24 12:09:12,019: -SERVICE [/crazyswarm_teleop/set_logger_level] /crazyswarm_teleop rosrpc://feuuu:38741
+[rosmaster.master][INFO] 2021-07-24 12:09:12,019: publisherUpdate[/rosout] -> http://feuuu:39161/ ['http://feuuu:38035/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2021-07-24 12:09:12,020: publisherUpdate[/rosout] -> http://feuuu:39161/ []
+[rosmaster.master][INFO] 2021-07-24 12:09:12,020: publisherUpdate[/rosout] -> http://feuuu:39161/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2021-07-24 12:09:12,021: publisherUpdate[/pointCloud] -> http://feuuu:38035/ []
+[rosmaster.master][INFO] 2021-07-24 12:09:12,020: -PUB [/pointCloud] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,022: -PUB [/initialpose] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,023: -PUB [/tf] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,024: -PUB [/move_base_simple/goal] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,025: -PUB [/cf1/log1] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,026: -PUB [/clicked_point] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,027: publisherUpdate[/pointCloud] -> http://feuuu:38035/ []: sec=0.01, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.master][INFO] 2021-07-24 12:09:12,028: -SUB [/virtual_interactive_object] /crazyswarm_server http://feuuu:39807/
+[rosmaster.threadpool][ERROR] 2021-07-24 12:09:12,029: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/usr/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2021-07-24 12:09:12,030: publisherUpdate[/tf] -> http://feuuu:38035/ []
+[rosmaster.master][INFO] 2021-07-24 12:09:12,031: -SUB [/tf] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,032: publisherUpdate[/tf] -> http://feuuu:38035/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.master][INFO] 2021-07-24 12:09:12,033: -SUB [/cf1/cmd_vel] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,035: -SUB [/tf_static] /rviz http://feuuu:38035/
+[rosmaster.threadpool][ERROR] 2021-07-24 12:09:12,035: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/usr/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2021-07-24 12:09:12,036: -SUB [/cf1/cmd_position] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,037: -SUB [/cf1/cmd_full_state] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,037: -SUB [/cf1/cmd_velocity_world] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,038: -SUB [/pointCloud] /rviz http://feuuu:38035/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,039: -SUB [/cf1/cmd_stop] /crazyswarm_server http://feuuu:39807/
+[rosmaster.master][INFO] 2021-07-24 12:09:12,039: -SERVICE [/rviz/get_loggers] /rviz rosrpc://feuuu:58429
+[rosmaster.master][INFO] 2021-07-24 12:09:12,040: -SERVICE [/crazyswarm_server/get_loggers] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,040: -SERVICE [/rviz/set_logger_level] /rviz rosrpc://feuuu:58429
+[rosmaster.master][INFO] 2021-07-24 12:09:12,041: -SERVICE [/rviz/reload_shaders] /rviz rosrpc://feuuu:58429
+[rosmaster.master][INFO] 2021-07-24 12:09:12,041: -SERVICE [/crazyswarm_server/set_logger_level] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,042: -SERVICE [/rviz/load_config] /rviz rosrpc://feuuu:58429
+[rosmaster.master][INFO] 2021-07-24 12:09:12,042: -SERVICE [/emergency] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,042: -SERVICE [/rviz/save_config] /rviz rosrpc://feuuu:58429
+[rosmaster.master][INFO] 2021-07-24 12:09:12,043: -SERVICE [/start_trajectory] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,043: -SERVICE [/takeoff] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,044: -SERVICE [/land] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,044: -SERVICE [/go_to] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,044: -SERVICE [/update_params] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,045: -SERVICE [/cf1/upload_trajectory] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,045: -SERVICE [/cf1/start_trajectory] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,045: -SERVICE [/cf1/takeoff] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,046: -SERVICE [/cf1/land] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,046: -SERVICE [/cf1/go_to] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,047: -SERVICE [/cf1/set_group_mask] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,047: -SERVICE [/cf1/notify_setpoints_stop] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:12,048: -SERVICE [/cf1/update_params] /crazyswarm_server rosrpc://feuuu:49569
+[rosmaster.master][INFO] 2021-07-24 12:09:13,823: -PUB [/rosout_agg] /rosout http://feuuu:39161/
+[rosmaster.master][INFO] 2021-07-24 12:09:13,823: -SUB [/rosout] /rosout http://feuuu:39161/
+[rosmaster.master][INFO] 2021-07-24 12:09:13,824: -SERVICE [/rosout/get_loggers] /rosout rosrpc://feuuu:49511
+[rosmaster.master][INFO] 2021-07-24 12:09:13,824: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://feuuu:49511
+[rosmaster.main][INFO] 2021-07-24 12:09:13,866: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2021-07-24 12:09:13,867: stopping master...
+[rospy.core][INFO] 2021-07-24 12:09:13,867: signal_shutdown [atexit]

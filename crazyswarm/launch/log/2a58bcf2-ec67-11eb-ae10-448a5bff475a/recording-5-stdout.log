@@ -1,0 +1,196 @@
+Attempted path: share/obs/obs-studio/locale/en-US.ini
+Attempted path: /usr/share/obs/obs-studio/locale/en-US.ini
+Attempted path: share/obs/obs-studio/locale.ini
+Attempted path: /usr/share/obs/obs-studio/locale.ini
+Attempted path: share/obs/obs-studio/themes/Dark.qss
+Attempted path: /usr/share/obs/obs-studio/themes/Dark.qss
+info: Command Line Arguments: --startrecording --profile lab_table_camera --scene gesture_demo
+info: CPU Name: Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz
+info: CPU Speed: 3392.139MHz
+info: Physical Cores: 4, Logical Cores: 8
+info: Physical Memory: 15962MB Total, 832MB Free
+info: Kernel Version: Linux 4.15.0-142-generic
+info: Distribution: "Ubuntu" "18.04"
+info: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.19.6
+info: Portable mode: false
+Attempted path: share/obs/obs-studio/themes/Dark/no_sources.svg
+Attempted path: /usr/share/obs/obs-studio/themes/Dark/no_sources.svg
+info: OBS 26.0.2 (linux)
+info: ---------------------------------
+info: ---------------------------------
+info: audio settings reset:
+	samples per sec: 48000
+	speakers:        2
+info: ---------------------------------
+info: Initializing OpenGL...
+info: Loading up OpenGL on adapter Intel Open Source Technology Center Mesa DRI Intel(R) HD Graphics 4600 (HSW GT2)
+info: OpenGL loaded successfully, version 4.5 (Core Profile) Mesa 20.0.8, shading language 4.50
+info: ---------------------------------
+info: video settings reset:
+	base resolution:   1920x1080
+	output resolution: 1280x720
+	downscale filter:  Bicubic
+	fps:               30/1
+	format:            NV12
+	YUV mode:          709/Partial
+info: NV12 texture support not available
+info: Audio monitoring device:
+	name: Default
+	id: default
+info: ---------------------------------
+warning: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+warning: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+info: No blackmagic support
+info: [obs-browser]: Version 2.8.7
+info: FFMPEG VAAPI supported
+info: VLC found, VLC video source enabled
+info: ---------------------------------
+info:   Loaded Modules:
+info:     vlc-video.so
+info:     text-freetype2.so
+info:     rtmp-services.so
+info:     obs-x264.so
+info:     obs-vst.so
+info:     obs-transitions.so
+info:     obs-outputs.so
+info:     obs-libfdk.so
+info:     obs-filters.so
+info:     obs-ffmpeg.so
+info:     obs-browser.so
+info:     linux-v4l2.so
+info:     linux-pulseaudio.so
+info:     linux-jack.so
+info:     linux-decklink.so
+info:     linux-capture.so
+info:     linux-alsa.so
+info:     image-source.so
+info:     frontend-tools.so
+info:     decklink-ouput-ui.so
+info: ---------------------------------
+info: ==== Startup complete ===============================================
+info: All scene data cleared
+info: ------------------------------------------------
+info: v4l2-input: Start capture from /dev/video2
+info: v4l2-input: Input: 0
+info: v4l2-input: Resolution: 640x480
+info: v4l2-input: Pixelformat: YUYV
+info: v4l2-input: Linesize: 1280 Bytes
+info: v4l2-input: Framerate: 30,00 fps
+info: v4l2-input: Start capture from /dev/video1
+info: v4l2-input: Input: 0
+info: v4l2-input: Resolution: 640x480
+info: v4l2-input: Pixelformat: BGR3
+info: v4l2-input: Linesize: 1920 Bytes
+info: v4l2-input: Framerate: 30,00 fps
+info: v4l2-input: Start capture from /dev/video5
+info: v4l2-input: Start capture from 
+info: Switched to scene 'Scene'
+info: Starting recording due to command line parameter
+info: ------------------------------------------------
+info: Loaded scenes:
+info: - scene 'Scene':
+info:     - source: 'Video Capture Device (V4L2)' (v4l2_input)
+info:     - source: 'Video Capture Device (V4L2) 2' (v4l2_input)
+info:     - source: 'Video Capture Device (V4L2) 3' (v4l2_input)
+info:     - source: 'Video Capture Device (V4L2) 4' (v4l2_input)
+info:     - source: 'Window Capture (Xcomposite)' (xcomposite_input)
+info: ------------------------------------------------
+info: ---------------------------------
+info: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+info: [x264 encoder: 'simple_h264_stream'] settings:
+	rate_control: CBR
+	bitrate:      2500
+	buffer size:  2500
+	crf:          0
+	fps_num:      30
+	fps_den:      1
+	width:        1280
+	height:       720
+	keyint:       250
+
+info: libfdk_aac encoder created
+info: libfdk_aac bitrate: 160, channels: 2
+info: ==== Recording Start ===============================================
+info: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/dvic/logitech_camera_LOGS/2021-07-24 12-09-03.mkv'...
+Attempted path: share/obs/obs-studio/images/overflow.png
+Attempted path: /usr/share/obs/obs-studio/images/overflow.png
+info: ==== Shutting down ==================================================
+info: v4l2-input: Stopped capture after 241 frames
+info: v4l2-input: Stopped capture after 312 frames
+info: All scene data cleared
+info: ------------------------------------------------
+info: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/dvic/logitech_camera_LOGS/2021-07-24 12-09-03.mkv' stopped
+info: Output 'simple_file_output': stopping
+info: Output 'simple_file_output': Total frames output: 273
+info: Output 'simple_file_output': Total drawn frames: 300
+info: libfdk_aac encoder destroyed
+info: [Scripting] Total detached callbacks: 0
+info: Freeing OBS context data
+info: == Profiler Results =============================
+info: run_program_init: 2031,85 ms
+info:  ┣OBSApp::AppInit: 3,918 ms
+info:  ┃ ┗OBSApp::InitLocale: 2,014 ms
+info:  ┗OBSApp::OBSInit: 1892,68 ms
+info:    ┣obs_startup: 20,784 ms
+info:    ┗OBSBasic::OBSInit: 1810,41 ms
+info:      ┣OBSBasic::InitBasicConfig: 0,139 ms
+info:      ┣OBSBasic::ResetAudio: 0,197 ms
+info:      ┣OBSBasic::ResetVideo: 82,587 ms
+info:      ┣OBSBasic::InitOBSCallbacks: 0,003 ms
+info:      ┣OBSBasic::InitHotkeys: 0,028 ms
+info:      ┣obs_load_all_modules: 104,221 ms
+info:      ┃ ┣obs_init_module(decklink-ouput-ui.so): 0,451 ms
+info:      ┃ ┣obs_init_module(frontend-tools.so): 37,01 ms
+info:      ┃ ┣obs_init_module(image-source.so): 0,006 ms
+info:      ┃ ┣obs_init_module(linux-alsa.so): 0,003 ms
+info:      ┃ ┣obs_init_module(linux-capture.so): 0,361 ms
+info:      ┃ ┣obs_init_module(linux-decklink.so): 0,146 ms
+info:      ┃ ┣obs_init_module(linux-jack.so): 0,002 ms
+info:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0,002 ms
+info:      ┃ ┣obs_init_module(linux-v4l2.so): 0,003 ms
+info:      ┃ ┣obs_init_module(obs-browser.so): 0,048 ms
+info:      ┃ ┣obs_init_module(obs-ffmpeg.so): 0,269 ms
+info:      ┃ ┃ ┗nvenc_check: 0,219 ms
+info:      ┃ ┣obs_init_module(obs-filters.so): 0,016 ms
+info:      ┃ ┣obs_init_module(obs-libfdk.so): 0,001 ms
+info:      ┃ ┣obs_init_module(obs-outputs.so): 0,002 ms
+info:      ┃ ┣obs_init_module(obs-transitions.so): 0,012 ms
+info:      ┃ ┣obs_init_module(obs-vst.so): 0,002 ms
+info:      ┃ ┣obs_init_module(obs-x264.so): 0,002 ms
+info:      ┃ ┣obs_init_module(rtmp-services.so): 0,431 ms
+info:      ┃ ┣obs_init_module(text-freetype2.so): 0,015 ms
+info:      ┃ ┗obs_init_module(vlc-video.so): 1,089 ms
+info:      ┣OBSBasic::ResetOutputs: 0,109 ms
+info:      ┣OBSBasic::CreateHotkeys: 0,031 ms
+info:      ┣OBSBasic::InitService: 1,108 ms
+info:      ┣OBSBasic::InitPrimitives: 0,14 ms
+info:      ┗OBSBasic::Load: 1498,34 ms
+info: obs_hotkey_thread(25 ms): min=0,061 ms, median=0,184 ms, max=12,148 ms, 99th percentile=3,61 ms, 100% below 25 ms
+info: audio_thread(Audio): min=0 ms, median=0,168 ms, max=2,567 ms, 99th percentile=0,477 ms
+info:  ┗receive_audio: min=0,008 ms, median=0,148 ms, max=2,532 ms, 99th percentile=0,345 ms, 0,83779 calls per parent call
+info:    ┣buffer_audio: min=0,001 ms, median=0,001 ms, max=0,012 ms, 99th percentile=0,006 ms
+info:    ┗do_encode: min=0,057 ms, median=0,144 ms, max=2,529 ms, 99th percentile=0,334 ms
+info:      ┗encode(simple_aac): min=0,057 ms, median=0,133 ms, max=2,522 ms, 99th percentile=0,287 ms
+info: obs_graphics_thread(33,3333 ms): min=0,086 ms, median=1,574 ms, max=1464,09 ms, 99th percentile=10,9 ms, 99,6805% below 33,333 ms
+info:  ┣tick_sources: min=0 ms, median=0,088 ms, max=1460,2 ms, 99th percentile=3,834 ms
+info:  ┣output_frame: min=0,066 ms, median=0,979 ms, max=5,39 ms, 99th percentile=2,422 ms
+info:  ┃ ┣gs_context(video->graphics): min=0,065 ms, median=0,668 ms, max=4,878 ms, 99th percentile=2,137 ms
+info:  ┃ ┃ ┣render_video: min=0,025 ms, median=0,584 ms, max=4,787 ms, 99th percentile=2,016 ms
+info:  ┃ ┃ ┃ ┣render_main_texture: min=0,022 ms, median=0,494 ms, max=4,655 ms, 99th percentile=1,189 ms
+info:  ┃ ┃ ┃ ┣render_output_texture: min=0,019 ms, median=0,031 ms, max=0,311 ms, 99th percentile=0,1 ms
+info:  ┃ ┃ ┃ ┣render_convert_texture: min=0,02 ms, median=0,032 ms, max=0,324 ms, 99th percentile=0,121 ms
+info:  ┃ ┃ ┃ ┗stage_output_texture: min=0,012 ms, median=0,021 ms, max=1,548 ms, 99th percentile=0,061 ms
+info:  ┃ ┃ ┣gs_flush: min=0,032 ms, median=0,064 ms, max=0,13 ms, 99th percentile=0,116 ms
+info:  ┃ ┃ ┗download_frame: min=0 ms, median=0,005 ms, max=0,023 ms, 99th percentile=0,018 ms
+info:  ┃ ┗output_video_data: min=0,198 ms, median=0,292 ms, max=1,291 ms, 99th percentile=1,085 ms
+info:  ┗render_displays: min=0,003 ms, median=0,469 ms, max=14,179 ms, 99th percentile=4,701 ms
+info: video_thread(video): min=0,825 ms, median=1,172 ms, max=2,904 ms, 99th percentile=2,811 ms
+info:  ┗receive_video: min=0,824 ms, median=1,17 ms, max=2,901 ms, 99th percentile=2,808 ms
+info:    ┗do_encode: min=0,823 ms, median=1,168 ms, max=2,899 ms, 99th percentile=2,806 ms
+info:      ┗encode(simple_h264_stream): min=0,815 ms, median=1,153 ms, max=2,897 ms, 99th percentile=2,805 ms
+info: =================================================
+info: == Profiler Time Between Calls ==================
+info: obs_hotkey_thread(25 ms): min=25,109 ms, median=25,268 ms, max=37,219 ms, 87,2068% within ±2% of 25 ms (0% lower, 12,7932% higher)
+info: obs_graphics_thread(33,3333 ms): min=2,565 ms, median=33,333 ms, max=1464,09 ms, 99,359% within ±2% of 33,333 ms (0,320513% lower, 0,320513% higher)
+info: =================================================
+info: Number of memory leaks: 0

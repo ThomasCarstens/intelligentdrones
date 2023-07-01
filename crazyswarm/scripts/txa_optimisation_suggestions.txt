@@ -1,0 +1,31 @@
+        """# waypoint.action 
+        # goal
+        uint32                  id
+        geometry_msgs/Point     point
+        ---
+        # result
+        duration                time_elapsed
+        uint32                  voltage
+        ---
+        # feedback
+        duration                time_elapsed
+        uint32                  voltage
+        """
+
+        # traj:.csv // trials: repetitions // timescale: speed // sleeptime: set as priority.
+        # better arguments: (goal.id, goal.shape, goal.repeat, goal.speed_coefficient)
+        """# performTraj.action 
+        # goal
+        uint32                  id
+        uint32                  shape
+        uint32                  repeat
+        uint32                  speed_coefficient
+        ---
+        # result
+        duration                time_elapsed
+        uint32                  voltage
+        ---
+        # feedback
+        duration                time_elapsed
+        uint32                  voltage
+        """

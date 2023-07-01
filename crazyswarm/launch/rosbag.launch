@@ -1,0 +1,4 @@
+<launch>
+<!-- All your stuff goes here -->
+<node pkg="rosbag" type="record" name="my_rosbag" output="screen" args="--all"/>
+</launch>

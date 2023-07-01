@@ -1,0 +1,3 @@
+logging to /home/dvic/cs/ros_ws/src/crazyswarm/launch/log/1f3e6172-ec68-11eb-ae10-448a5bff475a/rosout.log
+re-publishing aggregated messages to /rosout_agg
+subscribed to /rosout

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="crazyswarm" type="mocap_helper" name="mocap_helper" output="screen" >
+    <rosparam>
+      # tracking
+      motion_capture_type: "optitrack" # one of vicon,optitrack,qualisys,vrpn
+      object_tracking_type: "motionCapture" # one of motionCapture,libobjecttracker
+      # vicon_host_name: "vicon"
+      optitrack_host_name: "10.1.0.1"
+      optitrack_client_name: "10.1.0.2"
+      # qualisys_host_name: "10.0.5.219"
+      optitrack_base_port: "1511"
+      # optitrack_base_port: "1510"
+      # vrpn_host_name: "vicon"
+    </rosparam>
+  </node>
+</launch>

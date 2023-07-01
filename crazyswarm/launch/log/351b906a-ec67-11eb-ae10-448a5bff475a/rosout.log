@@ -1,0 +1,19 @@
+
+
+1627121359.387625546  Node Startup
+1627121359.511887874 INFO /crazyswarm_teleop [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_teleop.cpp:51(Manager)] [topics: /rosout] Manager ready.
+1627121359.620286417 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:113(info)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] Found variables in cache.
+1627121359.834283944 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:602(run)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] [cf1] reqParamTOC: 0.282087 s (165 params)
+1627121359.834309916 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:606(run)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] [cf1] Requesting logging variables...
+1627121359.837249535 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:113(info)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] Found variables in cache.
+1627121359.837893505 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:610(run)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] [cf1] reqLogTOC: 0.003626 s
+1627121359.842848158 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:635(run)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] [cf1] logBlocks: 0.282087 s
+1627121359.842882528 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:651(run)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] Requesting memories...
+1627121359.845178986 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:113(info)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] Memories: 8
+1627121359.855523308 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:656(run)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] [cf1] Ready. Elapsed: 0.303300 s
+1627121359.783960418 INFO /rviz [/tmp/binarydeb/ros-melodic-rviz-1.13.13/src/rviz/ogre_helpers/render_system.cpp:217(RenderSystem::detectGlVersion)] [topics: /rosout] OpenGl version: 3 (GLSL 1.3).
+1627121359.855553777 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:1239(addCrazyflie)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] CF run: 0.303442 s
+1627121359.865976526 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:319(updateParams)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] [cf1] Update parameters
+1627121359.902544214 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:1209(readObjects)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] Update params: 0.046944 s
+1627121359.902666221 INFO /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:1593(runFast)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] Started 1 threads
+1627121359.914342030 WARN /crazyswarm_server [/home/dvic/cs/ros_ws/src/crazyswarm/src/crazyswarm_server.cpp:1734(runFast)] [topics: /rosout, /pointCloud, /tf, /cf1/log1] Latency too high! Is 0.011511 s.
