@@ -57,7 +57,7 @@
     </node>
 </group>
 
-<group>
+<!-- <group>
     <remap from='fig8_' to='fig8_drone1'/>
     <node name='fig8_drone1' pkg='crazyswarm' type='ros_action_server.py'>
         <param name="helicoidale" value="$(arg helicoidale)"/>
@@ -79,7 +79,7 @@
         <param name="helicoidale" value="$(arg helicoidale)"/>
         <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
     </node>
-</group>
+</group> -->
 
 <group>
     <remap from='trajectory_action' to='heli_drone1'/>

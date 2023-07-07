@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# Point testing. You might find it more efficient to use cfclient in flight.
 import numpy as np
 
 from pycrazyswarm import *
