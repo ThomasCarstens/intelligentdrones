@@ -25,7 +25,9 @@ import os
 from pycrazyswarm import *
 import uav_trajectory
 import actionlib
-import actionlib_tutorials.msg
+# import crazyswarm.msg
+import crazyswarm
+import crazyswarm.msg
 #import actionlib_tutorials.srv
 from math import pow, atan2, sqrt
 
@@ -43,6 +45,7 @@ def speak(engine, text):
     engine.say(text)
     engine.runAndWait()
 
+
 """INITIATED BY MAIN"""
 class PerimeterMonitor(object):
 
@@ -56,7 +59,7 @@ class PerimeterMonitor(object):
         self.swarm = Crazyswarm()
         self.allcfs = self.swarm.allcfs
         self.timeHelper = self.swarm.timeHelper
-        speak (engine, "Activated.")
+        
 
 	#ROS Point message structure for ROS pose updates.
         self.cf1_pose = Point()
@@ -66,7 +69,7 @@ class PerimeterMonitor(object):
         self.cf5_pose = Point()
         self.cf6_pose = Point()
         self.desired_position = Point()
-        self._feedback_cf2 = actionlib_tutorials.msg.DoTrajFeedback()
+        self._feedback_cf2 = crazyswarm.msg.DoTrajFeedback()
 
         #Enable ("arm") the active drones that you wish to fly (txa#001)
         self.arm = True
@@ -103,42 +106,42 @@ class PerimeterMonitor(object):
 
 #	ACTION: CSV TRAJECTORY
 
-        self._action_feedback_csv_trajectory = actionlib_tutorials.msg.DoTrajFeedback()
-        self._action_result_csv_trajectory = actionlib_tutorials.msg.DoTrajResult()
-        self._action_name_csv_trajectory = 'trajectory_action' #csv_trajectory_action
+        self._action_feedback_csv_trajectory = crazyswarm.msg.DoTrajFeedback()
+        self._action_result_csv_trajectory = crazyswarm.msg.DoTrajResult()
+        self._action_name_csv_trajectory = 'trajectory_' #older demoes call it trajectory_action
         print (self._action_name_csv_trajectory)
-        self._as_csv_trajectory = actionlib.SimpleActionServer(self._action_name_csv_trajectory, actionlib_tutorials.msg.DoTrajAction, execute_cb=self.callback_csv_trajectory, auto_start = False)
+        self._as_csv_trajectory = actionlib.SimpleActionServer(self._action_name_csv_trajectory, crazyswarm.msg.DoTrajAction, execute_cb=self.callback_csv_trajectory, auto_start = False)
         self._as_csv_trajectory.start()
         print("READY: CSV TRAJECTORY ACTION.")
 
 
 #	ACTION: LAND (AND CONFIRM IF ALIVE)
 
-        self._action_feedback_land = actionlib_tutorials.msg.my_newFeedback()
-        self._action_result_land = actionlib_tutorials.msg.my_newResult()
+        self._action_feedback_land = crazyswarm.msg.my_newFeedback()
+        self._action_result_land = crazyswarm.msg.my_newResult()
         self._action_name_land = 'land_'
         print (self._action_name_land)
-        self._as_land = actionlib.SimpleActionServer(self._action_name_land, actionlib_tutorials.msg.my_newAction, execute_cb=self.callback_land, auto_start = False)
+        self._as_land = actionlib.SimpleActionServer(self._action_name_land, crazyswarm.msg.my_newAction, execute_cb=self.callback_land, auto_start = False)
         self._as_land.start()
         print("READY: LAND ACTION.")
 
 #	ACTION: FLY TO WAYPOINT  (Demo functional)
 
-        self._action_feedback_to_waypoint = actionlib_tutorials.msg.my_newFeedback()
-        self._action_result_to_waypoint = actionlib_tutorials.msg.my_newResult()
-        self._action_name_to_waypoint = 'detect_perimeter'
+        self._action_feedback_to_waypoint = crazyswarm.msg.my_newFeedback()
+        self._action_result_to_waypoint = crazyswarm.msg.my_newResult()
+        self._action_name_to_waypoint = 'waypoint_' #older demoes call it detect_perimeter
         print (self._action_name_to_waypoint)
-        self._as_to_waypoint = actionlib.SimpleActionServer(self._action_name_to_waypoint, actionlib_tutorials.msg.my_newAction, execute_cb=self.callback_to_waypoint, auto_start = False)
+        self._as_to_waypoint = actionlib.SimpleActionServer(self._action_name_to_waypoint, crazyswarm.msg.my_newAction, execute_cb=self.callback_to_waypoint, auto_start = False)
         self._as_to_waypoint.start()
         print("READY: FLY TO WAYPOINT ACTION.")
 
 #	ACTION: FOLLOW-ME (Untested)
 
-        self._feedback_cf3 = actionlib_tutorials.msg.my_newFeedback()
-        self._result_cf3 = actionlib_tutorials.msg.my_newResult()
+        self._feedback_cf3 = crazyswarm.msg.my_newFeedback()
+        self._result_cf3 = crazyswarm.msg.my_newResult()
         self._action_name_cf3 = 'cf3_follow_cf2'
         print (self._action_name_cf3)
-        self._as_cf3 = actionlib.SimpleActionServer(self._action_name_cf3, actionlib_tutorials.msg.my_newAction, execute_cb=self.execute_cb_cf3_follow_cf2, auto_start = False)
+        self._as_cf3 = actionlib.SimpleActionServer(self._action_name_cf3, crazyswarm.msg.my_newAction, execute_cb=self.execute_cb_cf3_follow_cf2, auto_start = False)
         self._as_cf3.start()
         print("FUNCTION: FOLLOW-ME ACTION.")
 
@@ -146,32 +149,32 @@ class PerimeterMonitor(object):
 
 #		FUNCTION: RANDOM WALK (Untested)
 
-        self._feedback_rw = actionlib_tutorials.msg.DoTrajFeedback()
-        self._result_rw = actionlib_tutorials.msg.DoTrajResult()
+        self._feedback_rw = crazyswarm.msg.DoTrajFeedback()
+        self._result_rw = crazyswarm.msg.DoTrajResult()
         self._action_name_rw = 'random_walk'
         print (self._action_name_rw)
         self.success_rw  = True
-        self._as_rw = actionlib.SimpleActionServer(self._action_name_rw, actionlib_tutorials.msg.DoTrajAction, execute_cb=self.rw_callback, auto_start = False)
+        self._as_rw = actionlib.SimpleActionServer(self._action_name_rw, crazyswarm.msg.DoTrajAction, execute_cb=self.rw_callback, auto_start = False)
         self._as_rw.start()
         print("Ready for Random Walk.")
 
 #		"""safe down (Untested)
 
-        self._feedback_sd = actionlib_tutorials.msg.DoTrajFeedback()
-        self._result_sd = actionlib_tutorials.msg.DoTrajResult()
+        self._feedback_sd = crazyswarm.msg.DoTrajFeedback()
+        self._result_sd = crazyswarm.msg.DoTrajResult()
         self._action_name_sd = 'safe_down'
         print (self._action_name_sd)
-        self._as_sd = actionlib.SimpleActionServer(self._action_name_sd, actionlib_tutorials.msg.DoTrajAction, execute_cb=self.safe_down, auto_start = False)
+        self._as_sd = actionlib.SimpleActionServer(self._action_name_sd, crazyswarm.msg.DoTrajAction, execute_cb=self.safe_down, auto_start = False)
         self._as_sd.start()
         print("Ready for Random Walk.")
 
 #		"""my hover (Untested)
 
-        self._feedback_mh = actionlib_tutorials.msg.DoTrajFeedback()
-        self._result_mh = actionlib_tutorials.msg.DoTrajResult()
+        self._feedback_mh = crazyswarm.msg.DoTrajFeedback()
+        self._result_mh = crazyswarm.msg.DoTrajResult()
         self._action_name_mh = 'ready'
         print (self._action_name_mh)
-        self._as_mh = actionlib.SimpleActionServer(self._action_name_mh, actionlib_tutorials.msg.DoTrajAction, execute_cb=self.my_hover, auto_start = False)
+        self._as_mh = actionlib.SimpleActionServer(self._action_name_mh, crazyswarm.msg.DoTrajAction, execute_cb=self.my_hover, auto_start = False)
         self._as_mh.start()
         print("Ready for Random Walk.")
 
@@ -252,7 +255,9 @@ class PerimeterMonitor(object):
 	#"""MOVES DRONE self.allcfs.crazyflies[0] TO Spiral Trajectory
 	
     def callback_csv_trajectory(self, goal):
-
+        # shapeName = String()
+        # shapeName.data = goal.shape.data
+        # data = shapeName.data
         speak (engine, "TRAJECTORY")
         self.initial_pose = Point()
 
@@ -265,69 +270,71 @@ class PerimeterMonitor(object):
                 self.initial_pose.z = cf.position()[2]
                
         self._action_feedback_csv_trajectory.time_elapsed = Duration(5)
-        self.traj_success = False
+        self.success_flag_trajectory = False
 
 		#"""SELECT A TRAJECTORY"""
+        # rospy.loginfo('%s: Goal shape' % shapeName)
+        # rospy.loginfo('%s: Goal data' % data)
         
-        if goal.shape == 5:
+        if goal.shape == 'helicoidal':
             selected_traj = self.heli
             TRIALS = 1
             TIMESCALE = 0.5
             SLEEPTIME = 14*TIMESCALE
             REVERSE = False
 
-        if goal.shape == 8:
+        if goal.shape == 'figure of 8':
             selected_traj = self.fig8
             TRIALS = 1
             TIMESCALE = 1
             SLEEPTIME = 14*TIMESCALE
             REVERSE = False
 	
-        if goal.shape != 5:
-            selected_traj = self.heli
-            TRIALS = 1
-            TIMESCALE = 1
-            SLEEPTIME = 14*TIMESCALE
-            REVERSE = False
+        # if goal.shape != 5:
+        #     selected_traj = self.fig
+        #     TRIALS = 1
+        #     TIMESCALE = 1
+        #     SLEEPTIME = 14*TIMESCALE
+        #     REVERSE = False
 
 
         for cf in self.allcfs.crazyflies:
             if cf.id == goal.id:
                 if self.arm == True:
                     cf.uploadTrajectory(0, 0, selected_traj)
-                    cf.startTrajectory(0, timescale=TIMESCALE/1.5, reverse = REVERSE)
+                    cf.startTrajectory(0, timescale=TIMESCALE, reverse = REVERSE)
 
         
-        while self.traj_success == False:
-            self.perimeter_monitor(goal.id, self.initial_pose)
+        while self.success_flag_trajectory == False:
+            # self.perimeter_monitor(goal.id, self.initial_pose)
 
             # Future: here for publishing feedback.
-
-            # Land drones if State Machine state is prempted.
             prempt_opportunities = 0
-            if self._as_csv_trajectory.is_preempt_requested():
-                rospy.loginfo('%s: Preempted' % self._action_name_csv_trajectory)
-                self._as_csv_trajectory.set_preempted()
-                for cf in self.allcfs.crazyflies:
-                    # if cf.id == goal.id or cf.id == goal.shape:
-                        # print("LANDING cf...", goal.id)
-                    cf.land(0.04, 2.5)
-                    rospy.loginfo('%s: Landing drones.' % self._action_name_csv_trajectory)
-                break
-            else :
-                rospy.sleep(SLEEPTIME/7)
-                prempt_opportunities =+1 
+            # Land drones if State Machine state is prempted.
+            while prempt_opportunities < 7:
+            
+                if self._as_csv_trajectory.is_preempt_requested():
+                    rospy.loginfo('%s: Preempted' % self._action_name_csv_trajectory)
+                    self._as_csv_trajectory.set_preempted()
+                    for cf in self.allcfs.crazyflies:
+                        # if cf.id == goal.id or cf.id == goal.shape:
+                            # print("LANDING cf...", goal.id)
+                        cf.land(0.04, 2.5)
+                        rospy.loginfo('%s: Landing drones.' % self._action_name_csv_trajectory)
+                    break
+                else :
+                    rospy.sleep(SLEEPTIME/7)
+                    prempt_opportunities = prempt_opportunities+1 
+
             # Action currently unmonitored and set 'complete' after given period of time.
-            
-            if prempt_opportunities == 7:
-                self.traj_success = True
+            self.success_flag_trajectory = True
 
             
 
 
-        if self.traj_success == True:
-            print("Reached the perimeter!!")
-            self.traj_success = False
+        if self.success_flag_trajectory == True:
+            print("Trajectory time complete.")
+            self.success_flag_trajectory = False
             self.counter = 0
             self._action_result_csv_trajectory.time_elapsed = Duration(5)
             self._action_result_csv_trajectory.updates_n = 1
@@ -350,7 +357,7 @@ class PerimeterMonitor(object):
         self._action_feedback_to_waypoint.position = Point()
         self._action_feedback_to_waypoint.time_elapsed = Duration(5)
 
-        self.success_to_waypoint = False
+        self.success_flag_waypoint = False
         self.enable_cfx = True
         self.waypoint = np.array([goal.point.x, goal.point.y, goal.point.z])
 
@@ -368,7 +375,7 @@ class PerimeterMonitor(object):
                     cf.takeoff(targetHeight=0.6, duration=3.0) #in case
                     cf.goTo(self.waypoint, yaw=0, duration=3.0)
 
-        while self.success_to_waypoint == False:
+        while self.success_flag_waypoint == False:
             self.PoseListener()
 
 
@@ -389,10 +396,10 @@ class PerimeterMonitor(object):
                 pass
 
 
-        if self.success_to_waypoint == True:
+        if self.success_flag_waypoint == True:
 
             print("Reached the perimeter.")
-            self.success_to_waypoint = False
+            self.success_flag_waypoint = False
             self._action_result_to_waypoint.time_elapsed = Duration(5)
             self._action_result_to_waypoint.updates_n = 1
             rospy.loginfo('My feedback: %s' % self._action_feedback_to_waypoint)
@@ -705,7 +712,7 @@ class PerimeterMonitor(object):
         distance_tolerance = 0.2
 
         if self.euclidean_distance(goal, id) < distance_tolerance:
-            self.success_to_waypoint = True
+            self.success_flag_waypoint = True
             self.success = True
 
 
@@ -728,13 +735,10 @@ signal.signal(signal.SIGINT, signal_handler)
 
 
 if __name__ == "__main__":
-    #rospy.init_node('hi') # CANNOT do this: conflicts with CrazyflieAPI. (txa#007)
-
-    print ("Server name is:", rospy.get_name()) 
-
+    
     collision_publisher = rospy.Publisher('/collision', String, queue_size=10)
+    print ("Server topic is called:", rospy.get_name()) #crazyflie-api, not its own node.
     perimeter_server = PerimeterMonitor(str(rospy.get_name())+str(1))
-    #position_subscriber = rospy.Subscriber('/tf', TFMessage, perimeter_server.cfx_callback)
 
     # Currently used to allow continuous callbacks
     rospy.spin()

@@ -6,7 +6,7 @@ import threading
 from math import sqrt, pow
 import smach_ros
 import smach
-
+from std_msgs.msg import String
 import actionlib
 from actionlib_tutorials.msg import my_newAction, my_newGoal, MachineAction, FibonacciAction, FibonacciGoal, DoTrajAction, DoTrajGoal, DoTrajFeedback
 from geometry_msgs.msg import Point
@@ -19,26 +19,30 @@ import std_srvs.srv
 import sys
 
 def polygonial():
-    ids = [2, 1, 4]
+    ids = [2, 3, 1]
     #define the differents points
     test_point= Point()
     test_point.x = 0
     test_point.y = 0
     test_point.z = 0.5
 
-    home_points_fo8 = [Point(), Point(), Point()]
+    home_points_fo8 = [Point(), Point(), Point(), Point()]
 
     home_points_fo8[0].x = 0.0
     home_points_fo8[0].y = 0.0
     home_points_fo8[0].z = 0.3
 
-    home_points_fo8[1].x = 0.6
-    home_points_fo8[1].y = -0.5
-    home_points_fo8[1].z = 0.5
+    home_points_fo8[1].x = 0.4
+    home_points_fo8[1].y = -1.2
+    home_points_fo8[1].z = 0.6
 
-    home_points_fo8[2].x = 0.2
-    home_points_fo8[2].y = -0.5
-    home_points_fo8[2].z = 0.5
+    home_points_fo8[2].x = 0.3
+    home_points_fo8[2].y = -1.0
+    home_points_fo8[2].z = 0.8
+
+    home_points_fo8[3].x = 0.4
+    home_points_fo8[3].y = -1.4
+    home_points_fo8[3].z = 0.6
 
 
     home_points_heli = [Point(), Point(), Point()]
@@ -89,22 +93,26 @@ def polygonial():
     my_points[7].y = -0.7
     my_points[7].z = 0.5
 
+    # helicoidal_shape = String()
+    # helicoidal_shape.data = "helicoidal"
+    # fig8_shape = String()
+    # fig8_shape.data = "figure of 8"
 
 
     # Create a SMACH state machine
-    sm0 = StateMachine(outcomes=['succeeded','aborted','preempted'])
+    sm0 = StateMachine(outcomes=['sm_succeeded','sm_aborted','sm_preempted'])
     #progressively add drones
     with sm0:
 
 
 
         StateMachine.add('drone2-HELI',
-                         SimpleActionState('drone2detect_perimeter',
+                         SimpleActionState('waypoint_drone1',
                                             my_newAction, goal = my_newGoal(point = home_points_fo8[2], id = ids[0] )),
                         transitions={'succeeded' : 'drone3-HELI', 'aborted' : 'land_all', 'preempted' : 'land_all'})
                         
         StateMachine.add('drone3-HELI',
-                         SimpleActionState('drone3detect_perimeter',
+                         SimpleActionState('waypoint_drone2',
                                             my_newAction, goal = my_newGoal(point = home_points_fo8[1], id = ids[1] )),
                         transitions={'succeeded' : 'HELI_EXECUTE', 'aborted' : 'land_all', 'preempted' : 'land_all'})
 
@@ -117,12 +125,12 @@ def polygonial():
 
         with heli_sm:
             Concurrence.add('HELI_EXECUTE_drone2',
-            SimpleActionState('heli_drone2',
-                            DoTrajAction, goal = DoTrajGoal(shape = 0, id = ids[0])))
+                SimpleActionState('trajectory_drone1',
+                            DoTrajAction, goal = DoTrajGoal(shape ='helicoidal', id = ids[0])))
 
             Concurrence.add('HELI_EXECUTE_drone3',
-            SimpleActionState('heli_drone3',
-                                DoTrajAction, goal = DoTrajGoal(shape = 0, id = ids[1])))
+                SimpleActionState('trajectory_drone2',
+                                DoTrajAction, goal = DoTrajGoal(shape ='helicoidal', id = ids[1])))
 
 
 
@@ -130,7 +138,7 @@ def polygonial():
 
         fig8_end = Concurrence(['succeeded', 'aborted', 'preempted'], 'succeeded')
 
-        StateMachine.add('LAND_END', fig8_end, transitions={'succeeded' : 'land_all', 'aborted' : 'land_all', 'preempted' : 'land_all'})
+        StateMachine.add('LAND_END', fig8_end, transitions={'succeeded' : 'drone2-HELI', 'aborted' : 'land_all', 'preempted' : 'land_all'})
         ## Bug BBL: DO NOT try to decide on outcomes in a concurrence, do it in the SM.add!!
 
 
@@ -152,7 +160,7 @@ def polygonial():
 
         land_sm =  Concurrence(['succeeded', 'aborted', 'preempted'], 'succeeded')
 
-        StateMachine.add('land_all', land_sm)
+        StateMachine.add('land_all', land_sm, transitions={'succeeded' : 'sm_succeeded', 'aborted' : 'sm_aborted', 'preempted' : 'sm_preempted'})
 
         with land_sm:
 
@@ -176,7 +184,7 @@ def polygonial():
 
 
     # Attach a SMACH introspection server
-    sis = IntrospectionServer('chore_2drones_test', sm0, '/chore_2drones_test')
+    sis = IntrospectionServer('DEMO_csv_trajectory_2_drones', sm0, '/DEMO_csv_trajectory_2_drones')
     sis.start()
 
     # Set preempt handler
@@ -189,7 +197,7 @@ def polygonial():
 
 
 if __name__ == '__main__':
-    rospy.init_node('smach_usecase_step_06')
+    rospy.init_node('DEMO_csv_trajectory_2_drones')
     t1 = threading.Thread(target=polygonial)
     t1.start()
     rospy.spin()

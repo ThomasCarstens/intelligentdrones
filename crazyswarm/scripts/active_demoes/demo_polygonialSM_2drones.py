@@ -17,7 +17,7 @@ import std_srvs.srv
 import sys
 
 def polygonial():
-    ids = [2, 1, 4]
+    ids = [2, 3, 1]
     #define the differents points
 
 
@@ -70,7 +70,7 @@ def polygonial():
 
     # @ Higher altitude and bigger rectangle (limit cascading air)
     my_points[4].x = 0.5
-    my_points[4].y = 0.0
+    my_points[4].y = -1.8
     my_points[4].z = 1.5
 
     my_points[5].x = 0.5
@@ -82,7 +82,7 @@ def polygonial():
     my_points[6].z = 1.5
 
     my_points[7].x = 0
-    my_points[7].y = 0.0
+    my_points[7].y = -1.8
     my_points[7].z = 1.5
 
 
@@ -93,12 +93,12 @@ def polygonial():
     with sm0:
 
         StateMachine.add('drone2-2',
-                         SimpleActionState('drone2detect_perimeter',
+                         SimpleActionState('waypoint_drone1',
                                             my_newAction, goal = my_newGoal(point = home_points[2], id = ids[0] )),
                         transitions={'succeeded' : 'drone3-1', 'aborted' : 'land_all', 'preempted' : 'land_all'})
 
         StateMachine.add('drone3-1',
-                         SimpleActionState('drone3detect_perimeter',
+                         SimpleActionState('waypoint_drone2',
                                             my_newAction, goal = my_newGoal(point = home_points[1], id = ids[1] )),
                         transitions={'succeeded' : 'infinit_loop', 'aborted' : 'land_all', 'preempted' : 'land_all'})
 
@@ -128,7 +128,7 @@ def polygonial():
         StateMachine.add('infinit_loop', sm1)
 
         with sm1:
-            drone1 = StateMachine(outcomes=['succeeded','aborted','preempted'])  
+            drone1 = StateMachine(outcomes=['drone1_outcome_succeeded','drone1_outcome_aborted','drone1_outcome_preempted'])  
 
             Concurrence.add('DRONE1', drone1)
 
@@ -144,13 +144,13 @@ def polygonial():
                     else :
                         point_for_state.z = my_points[order[i]].z - (i*0.1) + 0.8 
                     StateMachine.add('DRONE1-' + str(order[i]),
-                                     SimpleActionState('drone1detect_perimeter',
+                                     SimpleActionState('waypoint_drone1',
                                                           my_newAction, goal = my_newGoal(point = point_for_state, id = ids[0])),
                                        transitions={'succeeded' : 'DRONE1-' + str(order[i+1]), 'aborted' : 'LAND_DRONE1', 'preempted' : 'LAND_DRONE1'})
 
                 #make it infinit
                 smach.StateMachine.add('DRONE1-' + str(order[-1]),
-                               SimpleActionState('drone1detect_perimeter',
+                               SimpleActionState('waypoint_drone1',
                                                     my_newAction, goal = my_newGoal(point = my_points[order[-1]], id = ids[0])),
                               transitions={'succeeded' : 'DRONE1-'  + str(order[0]), 'aborted' : 'LAND_DRONE1', 'preempted' : 'LAND_DRONE1'})
 
@@ -159,11 +159,11 @@ def polygonial():
                 smach.StateMachine.add('LAND_DRONE1',
                                SimpleActionState('land_drone1',
                                                     my_newAction, goal = my_newGoal(point = my_points[3], id = ids[0])),
-                              transitions={'succeeded' : 'LAND_DRONE1'})
+                              transitions={'succeeded' : 'drone1_outcome_succeeded', 'aborted' : 'drone1_outcome_aborted', 'preempted' : 'drone1_outcome_preempted'}) # succeeded state machine
 
 
 
-            drone2 = StateMachine(outcomes=['succeeded','aborted','preempted']) 
+            drone2 = StateMachine(outcomes=['drone2_outcome_succeeded','drone2_outcome_aborted','drone2_outcome_preempted']) 
 
 
             Concurrence.add('DRONE2', drone2)
@@ -180,13 +180,13 @@ def polygonial():
                     else :
                         point_for_state.z = my_points[order[i]].z - (i*0.1) + 0.8 
                     StateMachine.add('DRONE2-' + str(order[i]),
-                                     SimpleActionState('drone2detect_perimeter',
+                                     SimpleActionState('waypoint_drone2',
                                                           my_newAction, goal = my_newGoal(point = point_for_state, id = ids[1])),
                                        transitions={'succeeded' : 'DRONE2-' + str(order[i+1]), 'aborted' : 'LAND_DRONE2', 'preempted' : 'LAND_DRONE2'})
 
                 #make it infinit
                 smach.StateMachine.add('DRONE2-' + str(order[-1]),
-                             SimpleActionState('drone2detect_perimeter',
+                             SimpleActionState('waypoint_drone2',
                                                      my_newAction, goal = my_newGoal(point = my_points[order[-1]], id = ids[1])),
                              transitions={'succeeded' : 'DRONE2-' + str(order[0]), 'aborted' : 'LAND_DRONE2', 'preempted' : 'LAND_DRONE2'})
 
@@ -195,7 +195,7 @@ def polygonial():
                 smach.StateMachine.add('LAND_DRONE2',
                                SimpleActionState('land_drone2',
                                                     my_newAction, goal = my_newGoal(point = my_points[3], id = ids[1])),
-                              transitions={'succeeded' : 'LAND_DRONE2'})
+                              transitions={'succeeded' : 'drone2_outcome_succeeded', 'aborted' : 'drone2_outcome_aborted', 'preempted' : 'drone2_outcome_preempted'}) # succeeded state machine
 
 
 

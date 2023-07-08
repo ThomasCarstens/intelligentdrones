@@ -1,15 +1,15 @@
 crazyflies:
 - channel: 27
-  id: 1
+  id: 2
   initialPosition:
-  - 0.0
+  - 1.0
   - 0.0
   - 0.0
   type: default
 - channel: 27
-  id: 2
+  id: 3
   initialPosition:
-  - 1.0
+  - 2.0
   - 0.0
   - 0.0
   type: default

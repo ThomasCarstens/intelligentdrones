@@ -9,29 +9,56 @@
 
 <!-- Duplicating ros_action_server nodes to service x drones (txa#004) -->
 
+<!-- WAYPOINT - 6 DRONES -->
 <group>
-    <remap from='detect_perimeter' to='drone1detect_perimeter'/>
-    <node name='drone1' pkg='crazyswarm' type='ros_action_server.py'>
+    <remap from='waypoint_' to='waypoint_drone1'/>
+    <node name='waypoint_drone1' pkg='crazyswarm' type='ros_action_server.py'>
         <param name="helicoidale" value="$(arg helicoidale)"/>
         <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
     </node>
 </group>
 
 <group>
-    <remap from='detect_perimeter' to='drone2detect_perimeter'/>
-    <node name='drone2' pkg='crazyswarm' type='ros_action_server.py'>
+    <remap from='waypoint_' to='waypoint_drone2'/>
+    <node name='waypoint_drone2' pkg='crazyswarm' type='ros_action_server.py'>
         <param name="helicoidale" value="$(arg helicoidale)"/>
         <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
     </node>
 </group>
 
 <group>
-    <remap from='detect_perimeter' to='drone3detect_perimeter'/>
-    <node name='drone3' pkg='crazyswarm' type='ros_action_server.py'>
+    <remap from='waypoint_' to='waypoint_drone3'/>
+    <node name='waypoint_drone3' pkg='crazyswarm' type='ros_action_server.py'>
         <param name="helicoidale" value="$(arg helicoidale)"/>
         <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
     </node>
 </group>
+
+<group>
+    <remap from='waypoint_' to='waypoint_drone4'/>
+    <node name='waypoint_drone4' pkg='crazyswarm' type='ros_action_server.py'>
+        <param name="helicoidale" value="$(arg helicoidale)"/>
+        <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
+    </node>
+</group>
+
+<group>
+    <remap from='waypoint_' to='waypoint_drone5'/>
+    <node name='waypoint_drone5' pkg='crazyswarm' type='ros_action_server.py'>
+        <param name="helicoidale" value="$(arg helicoidale)"/>
+        <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
+    </node>
+</group>
+
+<group>
+    <remap from='waypoint_' to='waypoint_drone6'/>
+    <node name='waypoint_drone6' pkg='crazyswarm' type='ros_action_server.py'>
+        <param name="helicoidale" value="$(arg helicoidale)"/>
+        <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
+    </node>
+</group>
+
+<!-- LAND - 6 DRONES -->
 
 <group>
     <remap from='land_' to='land_drone1'/>
@@ -57,54 +84,79 @@
     </node>
 </group>
 
-<!-- <group>
-    <remap from='fig8_' to='fig8_drone1'/>
-    <node name='fig8_drone1' pkg='crazyswarm' type='ros_action_server.py'>
+<group>
+    <remap from='land_' to='land_drone4'/>
+    <node name='land_drone4' pkg='crazyswarm' type='ros_action_server.py'>
         <param name="helicoidale" value="$(arg helicoidale)"/>
         <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
     </node>
 </group>
 
 <group>
-    <remap from='fig8_' to='fig8_drone2'/>
-    <node name='fig8_drone2' pkg='crazyswarm' type='ros_action_server.py'>
+    <remap from='land_' to='land_drone5'/>
+    <node name='land_drone5' pkg='crazyswarm' type='ros_action_server.py'>
         <param name="helicoidale" value="$(arg helicoidale)"/>
         <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
     </node>
 </group>
 
 <group>
-    <remap from='fig8_' to='fig8_drone3'/>
-    <node name='fig8_drone3' pkg='crazyswarm' type='ros_action_server.py'>
+    <remap from='land_' to='land_drone6'/>
+    <node name='land_drone6' pkg='crazyswarm' type='ros_action_server.py'>
         <param name="helicoidale" value="$(arg helicoidale)"/>
         <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
     </node>
-</group> -->
+</group>
+
+<!-- CSV TRAJECTORIES - 6 DRONES -->
 
 <group>
-    <remap from='trajectory_action' to='heli_drone1'/>
-    <node name='heli_drone1' pkg='crazyswarm' type='ros_action_server.py'>
+    <remap from='trajectory_' to='trajectory_drone1'/>
+    <node name='trajectory_drone1' pkg='crazyswarm' type='ros_action_server.py'>
         <param name="helicoidale" value="$(arg helicoidale)"/>
         <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
     </node>
 </group>
 
 <group>
-    <remap from='trajectory_action' to='heli_drone2'/>
-    <node name='heli_drone2' pkg='crazyswarm' type='ros_action_server.py'>
+    <remap from='trajectory_' to='trajectory_drone2'/>
+    <node name='trajectory_drone2' pkg='crazyswarm' type='ros_action_server.py'>
         <param name="helicoidale" value="$(arg helicoidale)"/>
         <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
     </node>
 </group>
 
 <group>
-    <remap from='trajectory_action' to='heli_drone3'/>
-    <node name='heli_drone3' pkg='crazyswarm' type='ros_action_server.py'>
+    <remap from='trajectory_' to='trajectory_drone3'/>
+    <node name='trajectory_drone3' pkg='crazyswarm' type='ros_action_server.py'>
         <param name="helicoidale" value="$(arg helicoidale)"/>
         <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
     </node>
 </group>
 
+<group>
+    <remap from='trajectory_' to='trajectory_drone4'/>
+    <node name='trajectory_drone4' pkg='crazyswarm' type='ros_action_server.py'>
+        <param name="helicoidale" value="$(arg helicoidale)"/>
+        <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
+    </node>
+</group>
+
+<group>
+    <remap from='trajectory_' to='trajectory_drone5'/>
+    <node name='trajectory_drone5' pkg='crazyswarm' type='ros_action_server.py'>
+        <param name="helicoidale" value="$(arg helicoidale)"/>
+        <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
+    </node>
+</group>
+
+<group>
+    <remap from='trajectory_' to='trajectory_drone6'/>
+    <node name='trajectory_drone6' pkg='crazyswarm' type='ros_action_server.py'>
+        <param name="helicoidale" value="$(arg helicoidale)"/>
+        <param name="figure8_smooth" value="$(arg figure8_smooth)"/>
+    </node>
+</group>
 <!-- Visualize State Machine for when it is launched later (txa#005) -->
 
 <node pkg="smach_viewer" name="smach_viewer" type="smach_viewer.py" />  

@@ -18,6 +18,19 @@ find_package(catkin REQUIRED COMPONENTS
   tf_conversions
 )
 
+add_action_files(
+  DIRECTORY action
+  FILES Machine.action
+  FILES my_new.action
+  FILES Lidar.action
+  FILES DoTraj.action
+)
+
+add_service_files(
+  FILES
+  killMotors.srv
+)
+
 set (CMAKE_CXX_STANDARD 11)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -82,6 +95,7 @@ add_message_files(
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
+   actionlib_msgs
    std_msgs
    geometry_msgs
 )
@@ -134,6 +148,7 @@ catkin_package(
   CATKIN_DEPENDS
     message_runtime
     std_msgs
+    actionlib_msgs
     tf
     crazyflie_cpp
     # libobjecttracker

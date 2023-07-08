@@ -3,7 +3,7 @@
 # Part 1: the goal.
 geometry_msgs/Point point
 int32 id
-int32 shape
+string shape
 ---
 # Part 2: the result, sent by action server unpon completion
 duration time_elapsed
